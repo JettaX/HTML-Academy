@@ -1,0 +1,64 @@
+@import (reference) "../../service/mixin.less";
+@import (reference) "../../service/variables.less";
+
+.page-header {
+
+  @media (min-width: @tablet) {
+    display: flex;
+
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    @media (min-width: @mobile) and (max-width: @mobile-only) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+
+  &__toggle {
+    width: 21px;
+    height: 20px;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--opened {
+      background-image: url("/picture/icon/menu-close.svg.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--closed {
+      background-image: url("/picture/icon/menu.svg.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--nojs {
+      background-image: url("/picture/icon/menu-close.svg.svg");
+      background-repeat: no-repeat;
+    }
+
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+}

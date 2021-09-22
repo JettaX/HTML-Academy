@@ -1,0 +1,1 @@
+export var setup = document.querySelector('.setup');

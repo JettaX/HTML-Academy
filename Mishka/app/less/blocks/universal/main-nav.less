@@ -1,0 +1,20 @@
+@import (reference) "../../service/mixin.less";
+@import (reference) "../../service/variables.less";
+
+
+.main-nav {
+
+  @media (max-width: @mobile-only) {
+    &--opned {
+      display: block;
+    }
+
+    &--closed {
+      display: none;
+    }
+
+    &--nojs {
+      display: block;
+    }
+  }
+}

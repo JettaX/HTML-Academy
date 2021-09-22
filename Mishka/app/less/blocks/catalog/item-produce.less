@@ -1,0 +1,124 @@
+@import (reference) "../../service/mixin.less";
+@import (reference) "../../service/variables.less";
+
+.item-produce {
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop) {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 455px;
+    margin-bottom: 105px;
+    width: 100%;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px;
+    }
+
+    &:active {
+      box-shadow: rgba(0, 0, 0, 0.1) 0 3px 3px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    .fonts(17px; 24px; @bold);
+
+    display: flex;
+    align-items: center;
+    height: 96px;
+    padding-left: 85px;
+
+    @media (min-width: @tablet) {
+      .fonts(20px; 24px; @bold);
+    }
+
+    @media (min-width: @desktop) {
+      padding-top: 60px;
+      padding-left: 65px;
+    }
+
+    & br {
+      @media (min-width: @tablet) and (max-width: @tablet-only) {
+        display: none;
+      }
+    }
+
+    &--camera::before {
+      content: "";
+      position: absolute;
+
+      width: 32px;
+      height: 22px;
+      left: 34px;
+      top: 34px;
+
+      background-image: url("/picture/icon/video.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @desktop) {
+        left: 65px;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @media (min-width: @tablet) {
+      order: -1;
+    }
+
+    @media (min-width: @desktop) {
+      flex-grow: 3;
+      height: 455px;
+      width: 682px;
+    }
+  }
+
+  &__wrapper {
+    padding: 32px;
+
+    @media (min-width: @tablet) {
+      padding: 0 42px 42px 42px;
+    }
+
+    @media (min-width: @desktop) {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      width: 297px;
+      padding-left: 65px;
+      padding-right: 5px;
+    }
+  }
+
+  &__description {
+    .fonts(13px; 24px; @regular);
+
+    margin: 0;
+    margin-bottom: 44px;
+
+    @media (min-width: @tablet) {
+      .fonts(15px; 30px; @regular);
+    }
+
+    @media (min-width: @desktop) {
+      margin-bottom: auto;
+    }
+  }
+
+  &__button {
+    .fonts(17px; 16px; @bold);
+
+    @media (min-width: @desktop) {
+      width: 230px;
+    }
+  }
+}

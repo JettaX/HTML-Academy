@@ -1,0 +1,83 @@
+@import (reference) "../../service/mixin.less";
+@import (reference) "../../service/variables.less";
+
+.description-site {
+
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 65px;
+  }
+
+  &__wave-grey {
+    @media (min-width: @tablet) and (max-width: @tablet-only){
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+
+    @media (min-width: @tablet) {
+      height: 25px;
+      margin-bottom: 50px;
+
+      background-image: url("/picture/backround/zigzag-grey-tablet.svg");
+      background-repeat: repeat-x;
+      background-position: top;
+    }
+
+    @media (min-width: @desktop) {
+      background-image: url("/picture/backround/zigzag-grey.svg");
+    }
+  }
+
+  &__title {
+    .fonts(25px; 30px; @bold);
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet) {
+      .fonts(43px; 50px; @bold);
+
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: @desktop) {
+      .fonts(53px; 57px; @bold);
+    }
+  }
+}
+
+.description-list {
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  &__item {
+    @media (min-width: @tablet) {
+      width: 334px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 525px;
+    }
+  }
+
+  &__feature {
+    display: block;
+    .fonts(17px; 20px; @bold);
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet) {
+      .fonts(20px; 22px; @bold);
+    }
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+  }
+}

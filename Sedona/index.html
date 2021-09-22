@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugin/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="mainHeader">
+
+    <nav class="mainNavigation container">
+
+        <div class="polygon">
+
+            <ul class="siteNavigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="Content.html">Фото и видео</a></li>
+                <li class="mainHeaderLogo"><a>
+                    <img src="css/picture/icon/logo.svg" width="140" height="72" alt="Логотип городка седона">
+                </a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+
+            <div class="titleLogo">
+                <img src="css/picture/icon/welcome.svg" width="459" height="353"
+                     alt="Добро пожаловать в седона">
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <div class="titleDescription">
+        <h1>Cедона — небольшой городок в аризоне,<br> заслуживающий большего!</h1>
+        <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
+    </div>
+
+    <section class="descriptionReasons">
+
+        <div class="descriptionAndPictureOne">
+
+            <div class="descriptionReasonOne">
+                <h3>настоящий<br> городок</h3><br>
+                <p>— №1 —</p><br>
+                <p> седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
+            </div>
+
+            <div class="pictureHotel">
+                <p>
+                    <img src="css/picture/content/hotel.jpg">
+                </p>
+            </div>
+
+        </div>
+
+        <ul class="reasonsOne">
+            <li class="descOne"><h3>жильё<br></h3>
+                <p>рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p></li>
+            <li class="descTwo"><h3>еда<br></h3>
+                <p>всегда заказывайте фирменный бургер, вы<br> не разочаруетесь!</p></li>
+            <li class="descThree"><h3>сувениры<br></h3>
+                <p>не только китайского, но и местного<br> производства!</p></li>
+        </ul>
+
+        <div class="descriptionAndPictureTwo">
+
+            <div class="descriptionReasonTwo">
+                <h3>там есть<br> мост дьявола</h3><br>
+                <p>— №2 —</p><br>
+                <p> да, по нему можно пройти! если конечно<br> вы осмелитесь</p>
+            </div>
+
+            <div class="pictureMountain">
+                <p>
+                    <img src="css/picture/content/mountain.jpg">
+                </p>
+            </div>
+
+        </div>
+
+        <ul class="reasonsTwo">
+            <li><h3>небольшая<br> площадь</h3>
+                <p>— №3 —</p>
+                <p>все достопримечательности<br> находятся очень близко!</p></li>
+            <li><h3>красивая<br> дорога</h3>
+                <p>— №4 —</p>
+                <p>ехать в седону из лас-вегаса совсем<br> не скучно!</p></li>
+            <li><h3>мало<br> туристов</h3>
+                <p>— №5 —</p>
+                <p>большинство едет в гранд каньон<br> и толпится там</p></li>
+        </ul>
+
+    </section>
+
+    <section class="searcherHotel">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="button buttonBrown openPopup" type="button">Поиск гостиницы в седоне</button>
+    </section>
+
+</main>
+
+<footer class="mainFooter">
+
+    <div class="container footerContainer">
+
+        <div class="footer">
+
+            <div class="contacts">
+                <ul>
+                    <li>#Visitsedona</li>
+                    <li>Тел: +7(495) 666-02-66</li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li><a class="button buttonBlue socialButton" href="#"><span class="visuallyHidden">Твиттер</span>
+                        <img src="css/picture/icon/twitter.svg" width="17" height="15"></a></li>
+                    <li><a class="button buttonBlue socialButton" href="#"><span class="visuallyHidden">Фейсбук</span>
+                        <img src="css/picture/icon/facebook.svg" width="12" height="22"></a></li>
+                    <li><a class="button buttonBlue socialButton" href="#"><span class="visuallyHidden">Ютюб</span>
+                        <img src="css/picture/icon/youtube.svg" width="20" height="16"></a></li>
+                </ul>
+            </div>
+
+            <p class="footerCopyright">
+                <b>Website by</b>
+                <a href="#">Vadim</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<section class="modalSearch">
+
+    <form class="searchForm" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="date">
+
+            <div class="dateIn">
+                <label for="dateIn">Дата заезда:</label>
+                <input id="dateIn" type="text" name="dateIn" placeholder="24 апреля 2017">
+            </div>
+
+            <div class="dateOut">
+                <label for="dateOut">Дата выезда:</label>
+                <input id="dateOut" type="text" name="dateOut" placeholder="4 июля 2017">
+            </div>
+
+        </div>
+
+        <div class="Counters">
+            <div class="countAdult">
+                <label for="countAdult">Взрослые:</label>
+                <div class="plus"></div>
+                <input class="counter" id="countAdult" type="number" name="dateOut" value="2" min="1">
+                <div class="minus"></div>
+            </div>
+            <div class="countChildren">
+                <label for="countChildren">Дети:</label>
+                <div class="plus"></div>
+                <input class="counter" id="countChildren" type="number" name="dateOut" value="0" min="0">
+                <div class="minus"></div>
+            </div>
+        </div>
+
+        <button class="button buttonBlue" type="submit">Найти</button>
+    </form>
+
+</section>
+
+</body>
+</html>

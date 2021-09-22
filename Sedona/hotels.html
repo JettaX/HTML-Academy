@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отели седония</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/plugin/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="mainHeader innerHeader">
+
+    <nav class="mainNavigation container">
+
+        <div class="polygon">
+
+            <ul class="siteNavigation innerSiteNavigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="Content.html">Фото и видео</a></li>
+                <li class="mainHeaderLogo"><a>
+                    <img src="css/picture/icon/logo.svg" width="140" height="72" alt="Логотип городка седона">
+                </a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="forms filters">
+
+        <h2 class="visuallyHidden">Фильтр услуг</h2>
+
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+
+            <div class="formCheckBox">
+
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul class="formCheckBoxList">
+                        <li class="filterOption">
+                            <input class="visuallyHidden filterInput filterInputCheckbox" type="checkbox"
+                                   name="pool" id="filterPool" value="pool" checked>
+                            <label for="filterPool">Бассейн</label>
+                        </li>
+                        <li class="filterOption">
+                            <input class="visuallyHidden filterInput filterInputCheckbox" type="checkbox"
+                                   name="park" id="filterPark" value="park">
+                            <label for="filterPark">Парковка</label>
+                        </li>
+                        <li class="filterOption">
+                            <input class="visuallyHidden filterInput filterInputCheckbox" type="checkbox"
+                                   name="WiFi" id="filterWiFi" value="WiFi">
+                            <label for="filterWiFi">WI-FI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul class="formCheckBoxList">
+                        <li class="filterOption">
+                            <input class="visuallyHidden filterInput filterInputCheckbox" type="checkbox"
+                                   name="hotel" id="filterHotel" value="hotel" checked>
+                            <label for="filterHotel">Гостиница</label>
+                        </li>
+                        <li class="filterOption">
+                            <input class="visuallyHidden filterInput filterInputCheckbox" type="checkbox"
+                                   name="motel" id="filterMotel" value="motel" checked>
+                            <label for="filterMotel">Мотель</label>
+                        </li>
+                        <li class="filterOption">
+                            <input class="visuallyHidden filterInput filterInputCheckbox" type="checkbox"
+                                   name="apartments" id="filterApartments" value="apartments" checked>
+                            <label for="filterApartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div class="formCost">
+
+                <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price">от <input type="number" name="min-price" value="0" min="0" max="3000"></label>
+                        <label class="max-price">до <input type="number" name="max-price" value="3000" min="0"
+                                                           max="3000"></label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                </div>
+
+                <button class="button buttonFilter" type="button">Показать</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section class="forms sort">
+
+        <div class="containerForms">
+
+            <p>Найдено:3</p>
+
+            <h3>Сортировка:</h3>
+
+
+            <form class="sortForm sortFormOne">
+                <ul>
+                    <li class="sortOption">
+                        <input class="visuallyHidden sortInput sortInputRadio" type="radio"
+                               name="sortGroup" value="cost" id="sortCost" checked>
+                        <label for="sortCost">По цене</label>
+                    </li>
+                    <li class="sortOption">
+                        <input class="visuallyHidden sortInput sortInputRadio" type="radio"
+                               name="sortGroup" value="type" id="sortType">
+                        <label for="sortType">По типу</label>
+                    </li>
+                    <li class="sortOption">
+                        <input class="visuallyHidden sortInput sortInputRadio" type="radio"
+                               name="sortGroup" value="rating" id="sortRating">
+                        <label for="sortRating">По рейтингу</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <form class="sortForm sortUpDown">
+
+            <fieldset>
+                <ul>
+                    <li class="sortOption sortUp">
+                        <input class="visuallyHidden inputUpDown" type="radio"
+                               name="sortGroup" value="sortUp" id="sortUp">
+                        <label for="sortUp">По возрастанию</label>
+                    </li>
+                    <li class="sortOption sortDown">
+                        <input class="visuallyHidden inputUpDown" type="radio"
+                               name="sortGroup" value="sortDown" id="sortDown" checked>
+                        <label for="sortDown">По убыванию</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="catalog">
+
+        <h2 class="visuallyHidden">Список жилья</h2>
+
+        <ul class="catalogList">
+
+            <li class="catalogItem">
+
+                <div class="catalogItemProduct">
+
+                    <div class="catalogItemPicture">
+                        <img src="css/picture/content/amara.jpg" width="135" height="90"
+                             alt="Гостиница amara resort & spa">
+                    </div>
+
+                    <div class="catalogDescription">
+
+                        <h3>amara resort & spa</h3>
+
+                        <div class="catalogItemPrice">
+                            <h4>Гостиница</h4>
+                            <b>От 4000 Р.</b>
+                        </div>
+
+                        <p class="catalogItemBook">
+                            <a class="button buttonBlue buttonBlueCatalog" href="#">Подробнее</a>
+                            <a class="button buttonBrown buttonBrownCatalog" href="#">Забронировать</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="catalogItemRating ratingOne">
+                    <div class="star">
+                        <img src="css/picture/icon/★%20.svg">
+                        <img src="css/picture/icon/★%20.svg">
+                        <img src="css/picture/icon/★%20.svg">
+                        <img src="css/picture/icon/★%20.svg">
+                    </div>
+                    <p class="rating">Рейтинг: 8,5</p>
+                </div>
+            </li>
+
+            <li class="catalogItem">
+
+                <div class="catalogItemProduct">
+
+                    <div class="catalogItemPicture">
+                        <img src="css/picture/content/desert.jpg" width="135" height="90"
+                             alt="Мотель desert quail inn">
+                    </div>
+
+                    <div class="catalogDescription">
+
+                        <h3>desert quail inn</h3>
+
+                        <div class="catalogItemPrice">
+                            <h4>Мотель</h4>
+                            <b>От 3000 Р.</b>
+                        </div>
+
+                        <p class="catalogItemBook">
+                            <a class="button buttonBlue buttonBlueCatalog" href="#">Подробнее</a>
+                            <a class="button buttonBrown buttonBrownCatalog" href="#">Забронировать</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="catalogItemRating ratingTwo">
+                    <div class="star">
+                        <img src="css/picture/icon/★%20.svg">
+                        <img src="css/picture/icon/★%20.svg">
+                        <img src="css/picture/icon/★%20.svg">
+                    </div>
+                    <p class="rating">Рейтинг: 8,9</p>
+                </div>
+            </li>
+
+            <li class="catalogItem">
+
+                <div class="catalogItemProduct">
+
+                    <div class="catalogItemPicture">
+                        <img src="css/picture/content/villas.jpg" width="135" height="90"
+                             alt="Аппартаменты villas at poco diablo">
+                    </div>
+
+                    <div class="catalogDescription">
+
+                        <h3>villas at poco diablo</h3>
+
+                        <div class="catalogItemPrice">
+                            <h4>Аппартаменты</h4>
+                            <b>От 2000 Р.</b>
+                        </div>
+
+                        <p class="catalogItemBook">
+                            <a class="button buttonBlue buttonBlueCatalog" href="#">Подробнее</a>
+                            <a class="button buttonBrown buttonBrownCatalog" href="#">Забронировать</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="catalogItemRating ratingThree">
+                    <div class="star">
+                        <img src="css/picture/icon/★%20.svg">
+                        <img src="css/picture/icon/★%20.svg">
+                    </div>
+                    <p class="rating">Рейтинг: 9,2</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer class="mainFooter">
+
+    <div class="container">
+
+        <div class="footer">
+
+            <div class="contacts">
+                <ul>
+                    <li>#Visitsedona</li>
+                    <li>Тел: +7(495) 666-02-66</li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li><a class="button buttonBlue socialButton" href="#"><span class="visuallyHidden">Твиттер</span>
+                        <img src="css/picture/icon/twitter.svg" width="17" height="15"></a></li>
+                    <li><a class="button buttonBlue socialButton" href="#"><span class="visuallyHidden">Фейсбук</span>
+                        <img src="css/picture/icon/facebook.svg" width="12" height="22"></a></li>
+                    <li><a class="button buttonBlue socialButton" href="#"><span class="visuallyHidden">Ютюб</span>
+                        <img src="css/picture/icon/youtube.svg" width="20" height="16"></a></li>
+                </ul>
+            </div>
+
+            <p class="footerCopyright">
+                <b>Website by</b>
+                <a href="#">Vadim</a>
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>

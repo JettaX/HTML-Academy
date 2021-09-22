@@ -1,0 +1,228 @@
+@import (reference) "../../service/mixin.less";
+@import (reference) "../../service/variables.less";
+
+.site-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: -30px;
+  margin-right: -30px;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 88px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop) {
+    justify-content: space-between;
+  }
+
+  &__item {
+    .fonts(17px; 24px; @bold);
+
+    display: flex;
+    align-items: center;
+
+    height: 78px;
+    padding-left: 75px;
+
+    @media (max-width: @mobile-only) {
+      border-top: 1px solid #ECECEC;
+    }
+
+    @media (min-width: @tablet) {
+      .fonts(15px; 24px; @bold);
+
+      justify-content: center;
+
+      height: 88px;
+      padding-left: 0;
+    }
+
+    @media (min-width: @desktop) {
+
+      &:nth-child(2) {
+        justify-content: flex-start;
+        order: -3;
+
+        width: 185px;
+      }
+
+      &:nth-child(3) {
+        order: -2;
+
+        width: 185px;
+
+        border-left: 1px solid #E6E6E6;
+      }
+    }
+
+    &--search {
+      position: relative;
+
+      & span {
+        @media (min-width: @tablet) {
+          display: none;
+        }
+      }
+    }
+
+    &--search svg {
+      @media (max-width: @mobile-only) {
+        position: absolute;
+        left: 30px;
+      }
+
+      & path {
+        fill: black;
+        opacity: 20%;
+      }
+    }
+
+    &--basket {
+      position: relative;
+    }
+
+    &--basket svg {
+      position: absolute;
+      left: 29px;
+
+      & path {
+        fill: black;
+        opacity: 20%;
+      }
+    }
+
+    &--logo {
+
+      &:hover {
+        opacity: 60%;
+      }
+
+      &:active {
+        opacity: 30%;
+      }
+
+      @media (max-width: @mobile-only) {
+        display: none;
+      }
+
+      @media (min-width: @tablet) and (max-width: @tablet-only) {
+        display: flex;
+        justify-content: flex-start;
+        order: -3;
+
+        width: 322px;
+      }
+
+      &--tablet {
+        @media (min-width: @desktop) {
+          display: none;
+        }
+      }
+
+      &--desktop {
+        @media (min-width: @tablet) {
+          display: none;
+        }
+        @media (min-width: @desktop) {
+          display: flex;
+          justify-content: center;
+          width: 300px;
+        }
+      }
+    }
+
+    &--search {
+      @media (min-width: @tablet) and (max-width: @tablet-only) {
+        order: -2;
+      }
+      @media (min-width: @tablet) {
+        width: 80px;
+
+        border-right: 1px solid #E6E6E6;
+        border-left: 1px solid #E6E6E6;
+      }
+    }
+
+    &--basket {
+      border-bottom: 1px solid #ECECEC;
+
+      @media (min-width: @tablet) and (max-width: @tablet-only) {
+        order: -1;
+      }
+
+      @media (min-width: @tablet) {
+        width: 264px;
+
+        & a {
+          .fonts(17px; 24px; @bold);
+        }
+
+        justify-content: flex-end;
+      }
+    }
+
+    &--break {
+
+      &--tablet {
+        @media (min-width: @tablet) and (max-width: @tablet-only) {
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          width: 161px;
+          padding-top: 10px;
+
+          border: none;
+        }
+      }
+
+      &--desktop {
+        @media (min-width: @mobile) {
+          display: none;
+        }
+
+        @media (min-width: @tablet) {
+          display: none;
+        }
+
+        @media (min-width: @desktop) {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          width: 185px;
+          margin-top: 18px;
+        }
+      }
+    }
+
+    &--extra {
+
+      &--tablet {
+        display: none;
+
+        @media (min-width: @tablet) {
+          .fonts(15px; 24px; @regular);
+
+          display: flex;
+          justify-content: flex-end;
+          flex-grow: 1;
+        }
+      }
+    }
+
+    &--alignment {
+      @media (min-width: @desktop) {
+        justify-content: flex-start;
+        padding-left: 30px;
+      }
+    }
+  }
+}

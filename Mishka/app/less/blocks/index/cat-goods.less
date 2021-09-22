@@ -1,0 +1,122 @@
+@import (reference) "../../service/mixin.less";
+@import (reference) "../../service/variables.less";
+
+.cat-goods {
+  margin-bottom: 25px;
+
+  &__title {
+    .fonts(27px; 30px; @bold);
+    text-align: center;
+
+    height: 213px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-top: 90px;
+
+    background-image: url("/picture/content/hero-mobile.jpg");
+
+    @media (min-width: @tablet) {
+      .fonts(43px; 50px; @bold);
+
+      height: 570px;
+      padding-top: 160px;
+      margin-left: -50px;
+      margin-right: -50px;
+
+      background-image: url("/picture/content/hero-tablet.jpg");
+      background-repeat: no-repeat;
+
+      & br:first-child {
+        display: none;
+      }
+    }
+
+    @media (min-width: @desktop) {
+      .fonts(53px; 57px; @bold);
+
+      margin-left: -100px;
+      margin-right: -100px;
+
+      background-color: #F9F9F9;
+      background-image: url("/picture/content/hero-desktop.jpg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__list {
+    .fonts(19px; 24px; @bold);
+    color: white;
+
+    @media (min-width: @tablet) {
+      .fonts(20px; 30px; @bold);
+
+      display: flex;
+      flex-direction: row;
+
+      margin-top: -103px;
+    }
+
+    & li {
+      flex-grow: 1;
+    }
+  }
+
+  &__item {
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    height: 103px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-left: 30px;
+
+    box-sizing: border-box;
+
+    @media (min-width: @tablet) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    & img {
+      margin-left: auto;
+      opacity: 50%;
+    }
+
+    &:hover {
+      margin-top: -5px;
+      height: 108px;
+      z-index: 2;
+
+      & img {
+        opacity: 70%;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      & img {
+        opacity: 30%;
+      }
+    }
+
+    &--one {
+      background: #63D1BB;
+
+      & img {
+        margin-right: 36px;
+      }
+    }
+
+    &--two {
+      background: #56C3B2;
+
+      & img {
+        margin-right: 27px;
+      }
+    }
+  }
+}

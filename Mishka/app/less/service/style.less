@@ -1,0 +1,142 @@
+@import (less) "imports.less";
+@import (reference) "mixin.less";
+@import (reference) "variables.less";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  .fonts(17px; 24px; @bold);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+
+  height: 52px;
+
+  background-color: white;
+  border: 2px solid black;
+
+  &:hover {
+    color: white;
+    background-color: #444444;
+    border: 2px solid #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+    border: 2px solid #444444;
+  }
+}
+
+.link {
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+
+    & path {
+      opacity: 100%;
+      fill: rgba(99, 209, 187, 1.0);
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    & path {
+      opacity: 100%;
+      fill: rgba(99, 209, 187, 0.3);
+    }
+  }
+
+
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: @mobile) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .wrapper-inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .wrapper-inner {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .container {
+    width: 1250px;
+    margin: 0 auto;
+  }
+
+  .container-inner {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .wrapper-inner {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

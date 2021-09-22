@@ -1,0 +1,947 @@
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.visuallyHidden:not(:focus):not(:active),
+input[type="checkbox"].visuallyHidden,
+input[type="radio"].visuallyHidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+
+    background-color: white;
+}
+
+.button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border: none;
+}
+
+.buttonBlue {
+    background-color: #81b3d2;
+}
+
+.buttonBlue:hover,
+.buttonBlue:focus {
+    background-color: #669EC0;
+}
+
+.buttonBlue:active {
+    background-color: #5496BD;
+}
+
+.buttonBrown {
+    background-color: #766357;
+}
+
+.buttonBrown:hover,
+.buttonBrown:focus {
+    background-color: #604E43;
+}
+
+.buttonBrown:active {
+    background-color: #503E33;
+}
+
+.mainNavigation {
+    font-weight: 700;
+
+    background-image: url("picture/background photo.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.polygon {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("picture/polygon.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.polygon .titleLogo {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 82px;
+}
+
+.siteNavigation {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 71px;
+    width: 100%;
+
+    list-style: none;
+    background-color: white;
+}
+
+.siteNavigation li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 239px;
+    height: 56px;
+}
+
+.siteNavigation li:nth-child(3n) {
+    width: 244px;
+}
+
+.siteNavigation li:nth-child(2n) {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    color: lightgray;
+}
+
+.siteNavigation a {
+    color: black;
+
+    padding: 0;
+    margin: 0;
+}
+
+.siteNavigation a:hover,
+.siteNavigation a:focus {
+    color: #81B3D2;
+}
+
+.siteNavigation a:active {
+    color: black;
+    opacity: 30%;
+}
+
+.siteNavigationCurrent a:not([href]) {
+    color: #766357;
+}
+
+.titleDescription {
+    text-align: center;
+}
+
+.titleDescription h1 {
+    font-size: 21px;
+    font-weight: 700;
+
+    padding-top: 58px;
+    padding-bottom: 27px;
+    margin: 0;
+}
+
+.titleDescription h2 {
+    font-size: 14px;
+    font-weight: 400;
+
+    padding-bottom: 54px;
+    margin: 0;
+}
+
+.descriptionReasons h3, p {
+    text-align: center;
+}
+
+.descriptionReasons h3 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.descriptionAndPictureOne {
+    display: flex;
+}
+
+.descriptionReasonOne {
+    width: 400px;
+}
+
+.descOne h3::before {
+    content: "";
+
+    position: absolute;
+    top: 55px;
+
+
+    width: 75px;
+    height: 72px;
+
+    background-image: url("picture/icon/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.descTwo h3::before {
+    content: "";
+
+    position: absolute;
+    top: 55px;
+
+    width: 75px;
+    height: 72px;
+    margin-left: -17px;
+
+    background-image: url("picture/icon/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.descThree h3::before {
+    content: "";
+
+    position: absolute;
+    top: 55px;
+
+    width: 75px;
+    height: 72px;
+    margin-left: 28px;
+
+    background-image: url("picture/icon/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.descriptionReasonOne h3 {
+    padding-top: 44px;
+}
+
+.pictureHotel p {
+    display: flex;
+    flex-grow: 1;
+}
+
+.pictureMountain p {
+    display: flex;
+    flex-grow: 1;
+}
+
+.descriptionAndPictureTwo {
+    display: flex;
+}
+
+.descriptionReasonTwo {
+    width: 400px;
+    order: 1;
+}
+
+.descriptionReasonTwo h3 {
+    padding-top: 44px;
+}
+
+.reasonsOne {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 330px;
+
+    background-color: white;
+}
+
+.reasonsOne h3 {
+    padding-bottom: 20px;
+    padding-top: 70px;
+}
+
+.reasonsTwo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 256px;
+
+    background-color: #eeeeee;
+}
+
+.reasonsTwo h3 {
+    padding-bottom: 25px;
+}
+
+.reasonsTwo p {
+    padding-bottom: 20px;
+}
+
+.reasonsOne,
+.reasonsTwo {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.descriptionReasonOne,
+.descriptionReasonTwo, h3 p {
+    color: white;
+
+    background-color: #81b3d2;
+}
+
+.searcherHotel {
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.searcherHotel h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.searcherHotel p {
+    padding-bottom: 10px;
+}
+
+.openPopup {
+    width: 568px;
+    height: 86px;
+}
+
+.modalSearch {
+    display: flex;
+    position: absolute;
+    top: 2163px;
+    left: 50%;
+
+    margin-left: -285px;
+    padding: 47px;
+
+    background-color: white;
+}
+
+.searchForm {
+    margin: 0;
+    padding: 0;
+}
+
+.searchForm label {
+    margin: 0;
+    margin-right: 24px;
+}
+
+.searchForm input {
+    font: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    padding-left: 12px;
+    margin-bottom: 29px;
+
+    box-sizing: border-box;
+    width: 346px;
+    height: 38px;
+
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.searchForm input:hover {
+    background-color: #EBEBEB;
+}
+
+.searchForm input:focus {
+    background-color: white;
+
+    outline: none;
+}
+
+.searchForm .button {
+    height: 58px;
+    width: 100%;
+    margin: 0;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+}
+
+.dateIn label {
+    padding-right: 4px;
+}
+
+.Counters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countAdult input,
+.countChildren input {
+    width: 38px;
+    height: 38px;
+}
+
+.countAdult {
+    display: flex;
+}
+
+.countAdult .plus,
+.countAdult .minus {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+}
+
+.countChildren {
+    display: flex;
+}
+
+.countChildren .plus,
+.countChildren .minus {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+}
+
+.countAdult label {
+    padding-right: 19px;
+}
+
+.innerHeader {
+    margin: 0;
+    padding: 0;
+}
+
+.innerSiteNavigation {
+    margin: 0;
+    padding: 0;
+}
+
+.forms fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.forms ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filters {
+    color: white;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 25px;
+    padding-left: 71px;
+    padding-right: 73px;
+
+    background-image: url("picture/filter background.jpg");
+}
+
+.filter legend {
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+
+    padding-bottom: 25px;
+}
+
+.filter li {
+    line-height: 21px;
+}
+
+.formCheckBox {
+    display: flex;
+}
+
+.formCheckBox fieldset {
+    padding-right: 100px;
+}
+
+.formCheckBox li {
+    padding-bottom: 25px;
+    padding-left: 40px;
+}
+
+.filterOption {
+    position: relative;
+}
+
+.filterInputCheckbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url("picture/icon/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filterInputCheckbox:checked + label::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 27px;
+    height: 23px;
+
+    background-image: url("picture/icon/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+    position: relative;
+
+    height: 36px;
+    margin-bottom: 20px;
+
+    font-size: 0;
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 2px;
+    height: 22px;
+
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+
+    color: inherit;
+    font: inherit;
+
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.buttonFilter {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.buttonFilter:focus,
+.buttonFilter:hover,
+.buttonFilter:active {
+    color: black;
+
+    background-color: white;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+
+    height: 86px;
+    padding-left: 70px;
+    padding-right: 73px;
+
+    border-bottom: 1px lightgray solid;
+}
+
+.containerForms {
+    display: flex;
+    align-items: center;
+}
+
+.sort p {
+    font-size: 21px;
+    font-weight: 700;
+    padding-right: 48px;
+}
+
+.sort h3 {
+    padding-right: 40px;
+}
+
+.sortForm li,
+.sort h3 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sortForm li {
+    padding-right: 33px;
+}
+
+.sortForm ul {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.sortForm label {
+    cursor: pointer;
+}
+
+input[type="radio"] + label {
+    opacity: 30%;
+    border-bottom: #81B3D2 1px dotted;
+}
+
+input[type="radio"]:focus + label,
+input[type="radio"]:hover + label {
+    color: #81B3D2;
+
+    opacity: 100%;
+}
+
+input[type="radio"]:checked + label {
+    color: #81B3D2;
+
+    border: none;
+
+    opacity: 100%;
+}
+
+input[type="radio"]:active + label {
+    color: black;
+}
+
+.sortUpDown li {
+    margin: 0;
+    padding: 0;
+}
+
+.sortUp {
+    list-style-image: url("picture/icon/icon-up-dir.svg");
+    list-style-position: outside;
+}
+
+.sortDown {
+    list-style-image: url("picture/icon/icon-down-dir.svg");
+    list-style-position: outside;
+}
+
+.sortUpDown input[type="radio"]:focus + label,
+.sortUpDown input[type="radio"]:hover + label {
+    color: black;
+
+    opacity: 100%;
+}
+
+.sortUpDown input[type="radio"]:active + label,
+.sortUpDown input[type="radio"]:checked + label {
+    color: #81B3D2;
+
+    opacity: 100%;
+}
+
+.catalogList {
+    padding: 0;
+    margin: 0;
+}
+
+.catalogItem {
+    display: flex;
+    justify-content: space-between;
+
+    height: 150px;
+    padding-left: 70px;
+    padding-right: 73px;
+
+    border-bottom: 1px lightgray solid;
+    list-style: none;
+}
+
+.catalogItem img {
+    margin-right: 31px;
+}
+
+.catalogItem h3 {
+    font-size: 21px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.catalogItem h4, b {
+    line-height: 21px;
+    font-weight: 400;
+
+    margin-bottom: 7px;
+}
+
+.catalogItemProduct {
+    display: flex;
+    align-self: center;
+}
+
+.catalogDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogItemPrice {
+    display: flex;
+}
+
+.catalogItemPrice h4 {
+    padding-right: 39px;
+}
+
+.catalogItemBook a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.catalogItemBook {
+    display: flex;
+}
+
+.buttonBlueCatalog {
+    width: 110px;
+    height: 27px;
+
+    margin-right: 6px;
+}
+
+.buttonBrownCatalog {
+    width: 142px;
+    height: 27px;
+}
+
+.catalogItemRating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-bottom: 36px;
+}
+
+.star {
+    align-self: flex-end;
+}
+
+.star img {
+    margin: 0;
+    padding: 0;
+}
+
+.rating {
+    width: 110px;
+    height: 27px;
+
+    background-color: #F2F2F2;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 120px;
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footerContainer {
+    display: flex;
+    padding-top: 470px;
+
+    background-image: url("picture/map.jpg");
+}
+
+.map {
+    display: flex;
+}
+
+.contacts ul {
+    font-size: 21px;
+    font-weight: 700;
+
+    list-style: none;
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+
+.socialButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social img:active {
+    opacity: 30%;
+}
+
+.footerCopyright b {
+    font: inherit;
+}
+
+.footerCopyright a {
+    color: black;
+    font: inherit;
+    padding: 0;
+}
